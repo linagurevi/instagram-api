@@ -1,5 +1,5 @@
 .idea
 .vscode
-.node modules
+node modules
 public
 !public/posts/.gitkeep

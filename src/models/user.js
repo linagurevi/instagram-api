@@ -19,7 +19,9 @@ const User = new mongoose.model('User', {
     },
 
     avatar: String,
-    
+
+    bio: String,
+       
     createdAt: {
         type: Date,
         defualt: () => new Date()

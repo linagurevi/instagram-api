@@ -2,8 +2,8 @@ const User = require('../models/user');
 const { cookieName } = require('../config/env/index');
 
 async function auth(req, res, next) {
-    const userID = req.cookies[cookieName];
-    if(!userID) {
+    const userId = req.cookies[cookieName];
+    if(!userId) {
         res.sendStatus(403);
         return;
     }
@@ -18,3 +18,4 @@ async function auth(req, res, next) {
 }
 
 module.exports = auth;
+
